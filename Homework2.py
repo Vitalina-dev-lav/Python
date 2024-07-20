@@ -11,6 +11,6 @@ completedHomework = 12
 hoursSpend = 1.5
 courseName = "Python"
 timeofOneTask= hoursSpend /completedHomework
-print('Kурс:',courseName , 'всего задач:', completedHomework,'затрачено часов:' hoursSpend , 'среднее время выполнения:' timeofOneTask.)
+print('Kурс:',courseName , ', всего задач:', completedHomework,', затрачено часов:', hoursSpend , ', среднее время выполнения:', timeofOneTask,)
 
 
