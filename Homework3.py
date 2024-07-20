@@ -17,5 +17,5 @@ age = 24
 print(age)
 new_age = age +40
 print(new_age)
-is_student = 'True'
+is_student = True
 print(is_student)
