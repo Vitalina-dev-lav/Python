@@ -7,10 +7,10 @@
 #Выведите на экран(в консоль), используя переменные, следующую строку:
 #Курс: Python, всего задач:12, затрачено часов: 1.5, среднее время выполнения 0.125 часа.
 
-CompletedHomework = '12'
-HoursSpend = '1.5'
-CourseName = "Python"
-TimeofOneTask = '(1.5 / 12)'
-print('Kурс:'+str(CourseName)+' ,всего задач:'+str(CompletedHomework)+' ,затрачено часов:'+str(HoursSpend)+' ,среднее время выполнения:'+str(TimeofOneTask))
+completedHomework = 12
+hoursSpend = 1.5
+courseName = "Python"
+timeofOneTask= hoursSpend /completedHomework
+print('Kурс:',courseName , 'всего задач:', completedHomework,'затрачено часов:' hoursSpend , 'среднее время выполнения:' timeofOneTask.)
 
 
