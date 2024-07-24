@@ -16,5 +16,20 @@
  # - Удалите один любой элемент из множества my_set.
  # - Выведите на экран измененное множество my_set.
 
- #my_dict = {'Dmitrii': 2000 , 'Sasha':2001 , 'Vitali': 1997 , 'Artem': 1999}
- #print(my_dict)
+my_dict={'Дмитрий': 2000, 'Артем': 2001, 'Александер': 2001, 'Виталий':1999 }
+print('Словарь:', my_dict)
+print('Год рождения Дмитрия:', my_dict['Дмитрий'])
+print('Год рождения Елены:', my_dict.get('Елена', 'нет такого ключа'))
+my_dict.update({'Никита': 1995, 'Салем': 2005})
+removed_year = my_dict.pop('Салем')
+print('Значение удалённого элемента \'Салема\':', removed_year)
+print('Изменённый словарь:', my_dict)
+
+print()
+
+my_set = {2, 3, 3, 2, 5, True, True, False, True, 'list', 'set', 'list', 'list'}
+print('Множество:', my_set)
+my_set.add('string')
+my_set.add('float')
+my_set.discard(2)
+print('Изменённое множество:', my_set)
