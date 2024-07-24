@@ -16,5 +16,5 @@
  # - Удалите один любой элемент из множества my_set.
  # - Выведите на экран измененное множество my_set.
 
- my_dict = { 'Dmitrii': 2000 , 'Sasha':2001 , 'Vitali': 1997 , 'Artem': 1999}
- print(my_dict)
+ #my_dict = {'Dmitrii': 2000 , 'Sasha':2001 , 'Vitali': 1997 , 'Artem': 1999}
+ #print(my_dict)
