@@ -30,3 +30,23 @@
 # процесс выяснения простоты числа при помощи оператора break, когда найдёте делитель. (Не обязательно)
 # Переменные меняющее своё булевое состояние на противоположное в процессе проверки,
 # как is_prime, в кругах разработчиков называются перменными-флагами(flag).
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+primes = []
+not_primes = []
+
+for num in numbers:
+    is_prime = True
+    if num > 1:
+        for i in range(2, num):
+            if num % i == 0:
+                is_prime = False
+        if is_prime and num > 1:
+            primes.append(num)
+        else:
+            not_primes.append(num)
+
+print('Primes:', primes)
+print('Not Primes:', not_primes)
