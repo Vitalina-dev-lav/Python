@@ -19,6 +19,18 @@
 # Вызвать соответствующие функции string_info и is_contains произвольное кол-во раз с произвольными данными.
 # Вывести значение переменной calls на экран(в консоль).
 
+# Пример выполняемого кода:
+# print(string_info('Capybara'))
+# print(string_info('Armageddon'))
+# print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN'])) # Urban ~ urBAN
+# print(is_contains('cycle', ['recycling', 'cyclic'])) # No matches
+# print(calls)
+# Вывод на консоль:
+# (8, 'CAPYBARA', 'capybara')
+# (10, 'ARMAGEDDON', 'armageddon')
+# True
+# False
+# 4
 
 # Примечания:
 # Для использования глобальной переменной внутри функции используйте оператор global.
