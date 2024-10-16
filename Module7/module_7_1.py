@@ -22,6 +22,14 @@ class Product:
         return (f'{self.name}; {self.weight}; {self.category}')
 
 
+# Объекты класса Shop будут создаваться следующим образом - Shop() и обладать следующими свойствами:
+# Инкапсулированный атрибут __file_name = 'products.txt'.
+# Метод get_products(self), который считывает всю информацию из файла __file_name,
+# закрывает его и возвращает единую строку со всеми товарами из файла __file_name.
+# Метод add(self, *products), который принимает неограниченное количество объектов класса Product.
+# Добавляет в файл __file_name каждый продукт из products, если его ещё нет в файле (по названию).
+# Если такой продукт уже есть, то не добавляет и выводит строку 'Продукт <название> уже есть в магазине'
+
 class Shop:
     def __init__(self):
         self.__file_name = 'products.txt'
@@ -54,3 +62,17 @@ print(p1)
 print(p2)
 print(p3)
 
+# Вывод на консоль:
+# Первый запуск:
+# Spaghetti, 3.4, Groceries
+# Potato, 50.5, Vegetables
+# Spaghetti, 3.4, Groceries
+# Potato, 5.5, Vegetables
+# Второй запуск:
+# Spaghetti, 3.4, Groceries
+# Продукт Potato, 50.5, Vegetables уже есть в магазине
+# Продукт Spaghetti, 3.4, Groceries уже есть в магазине
+# Продукт Potato, 5.5, Vegetables уже есть в магазине
+# Potato, 50.5, Vegetables
+# Spaghetti, 3.4, Groceries
+# Potato, 5.5, Vegetables
